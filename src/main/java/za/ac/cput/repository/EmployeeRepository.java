@@ -1,10 +1,13 @@
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import za.ac.cput.model.Employee;
+
 import java.util.List;
 
-public interface EmployeeRepository {
-    void save(Employee employee);
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, String> {
     Employee findByEmployeeNumber(String employeeNumber);
     List<Employee> findAll();
 }

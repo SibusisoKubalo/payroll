@@ -1,15 +1,15 @@
-package za.ac.cput.model;
+package za.ac.cput.domain;
 
 public class Address {
     private String streetAddress;
     private String postalAddress;
 
+    // Constructor, Getters & Setters
     public Address(String streetAddress, String postalAddress) {
         this.streetAddress = streetAddress;
         this.postalAddress = postalAddress;
     }
 
-    // Getters and Setters
     public String getStreetAddress() {
         return streetAddress;
     }

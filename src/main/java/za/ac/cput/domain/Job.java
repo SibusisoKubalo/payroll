@@ -1,4 +1,4 @@
-package za.ac.cput.model;
+package za.ac.cput.domain;
 
 import java.util.List;
 
@@ -6,12 +6,12 @@ public class Job {
     private String title;
     private List<Position> positions;
 
+    // Constructor, Getters & Setters
     public Job(String title, List<Position> positions) {
         this.title = title;
         this.positions = positions;
     }
 
-    // Getters and Setters
     public String getTitle() {
         return title;
     }

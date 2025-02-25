@@ -1,10 +1,11 @@
-package za.ac.cput.model;
+package za.ac.cput.domain;
 
 public class Position {
     private String positionCode;
     private PositionStatus status;
-    private Employee employee;
+    private Employee employee; // nullable if not filled
 
+    // Constructor, Getters & Setters
     public Position(String positionCode, PositionStatus status) {
         this.positionCode = positionCode;
         this.status = status;
@@ -20,7 +21,6 @@ public class Position {
         }
     }
 
-    // Getters and Setters
     public String getPositionCode() {
         return positionCode;
     }
@@ -53,4 +53,19 @@ public class Position {
                 ", employee=" + employee +
                 '}';
     }
+
+    private class PositionStatus {
+        public static final PositionStatus OPEN = null;
+        public static final PositionStatus CLOSED = null;
+    }
+
+    private class Employee {
+        //employee attributes
+    }
+
+    public static void main(String[] args) {
+        Position position = new Position("1", PositionStatus.OPEN);
+        System.out.println(position);
+    }
+
 }

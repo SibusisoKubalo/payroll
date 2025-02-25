@@ -1,23 +1,23 @@
-package za.ac.cput.model;
+package za.ac.cput.domain;
 
 public class ContactDetails {
-    private String cellPhoneNumber;
+    private String cellPhone;
     private String email;
     private String homeNumber;
 
-    public ContactDetails(String cellPhoneNumber, String email, String homeNumber) {
-        this.cellPhoneNumber = cellPhoneNumber;
+    // Constructor, Getters & Setters
+    public ContactDetails(String cellPhone, String email, String homeNumber) {
+        this.cellPhone = cellPhone;
         this.email = email;
         this.homeNumber = homeNumber;
     }
 
-    // Getters and Setters
-    public String getCellPhoneNumber() {
-        return cellPhoneNumber;
+    public String getCellPhone() {
+        return cellPhone;
     }
 
-    public void setCellPhoneNumber(String cellPhoneNumber) {
-        this.cellPhoneNumber = cellPhoneNumber;
+    public void setCellPhone(String cellPhone) {
+        this.cellPhone = cellPhone;
     }
 
     public String getEmail() {
@@ -39,7 +39,7 @@ public class ContactDetails {
     @Override
     public String toString() {
         return "ContactDetails{" +
-                "cellPhoneNumber='" + cellPhoneNumber + '\'' +
+                "cellPhone='" + cellPhone + '\'' +
                 ", email='" + email + '\'' +
                 ", homeNumber='" + homeNumber + '\'' +
                 '}';

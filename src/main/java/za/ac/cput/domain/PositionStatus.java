@@ -1,4 +1,4 @@
-package za.ac.cput.model;
+package za.ac.cput.domain;
 
 public enum PositionStatus {
     OPEN, CLOSED;

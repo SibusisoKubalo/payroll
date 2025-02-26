@@ -1,37 +1,36 @@
+/**
+ * @author Sibusiso Kubalo
+ * Student Num: 218316038
+ */
 package za.ac.cput.domain;
 
 public class Identity {
-    private String identityType;
-    private String identityValue;
+    private String type;
+    private String value;
 
-    // Constructor, Getters & Setters
-    public Identity(String identityType, String identityValue) {
-        this.identityType = identityType;
-        this.identityValue = identityValue;
+    // Getters and Setters
+    public String getType() {
+        return type;
     }
 
-    public String getIdentityType() {
-        return identityType;
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public void setIdentityType(String identityType) {
-        this.identityType = identityType;
+    public String getValue() {
+        return value;
     }
 
-    public String getIdentityValue() {
-        return identityValue;
+    public void setValue(String value) {
+        this.value = value;
     }
 
-    public void setIdentityValue(String identityValue) {
-        this.identityValue = identityValue;
-    }
-
+    // toString method
     @Override
     public String toString() {
         return "Identity{" +
-                "identityType='" + identityType + '\'' +
-                ", identityValue='" + identityValue + '\'' +
+                "type='" + type + '\'' +
+                ", value='" + value + '\'' +
                 '}';
     }
-
 }

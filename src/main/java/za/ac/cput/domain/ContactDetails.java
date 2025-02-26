@@ -1,23 +1,21 @@
+/**
+ * @author Sibusiso Kubalo
+ * Student Num: 218316038
+ */
 package za.ac.cput.domain;
 
 public class ContactDetails {
-    private String cellPhone;
+    private String cellPhoneNumber;
     private String email;
     private String homeNumber;
 
-    // Constructor, Getters & Setters
-    public ContactDetails(String cellPhone, String email, String homeNumber) {
-        this.cellPhone = cellPhone;
-        this.email = email;
-        this.homeNumber = homeNumber;
+    // Getters and Setters
+    public String getCellPhoneNumber() {
+        return cellPhoneNumber;
     }
 
-    public String getCellPhone() {
-        return cellPhone;
-    }
-
-    public void setCellPhone(String cellPhone) {
-        this.cellPhone = cellPhone;
+    public void setCellPhoneNumber(String cellPhoneNumber) {
+        this.cellPhoneNumber = cellPhoneNumber;
     }
 
     public String getEmail() {
@@ -36,10 +34,11 @@ public class ContactDetails {
         this.homeNumber = homeNumber;
     }
 
+    // toString method
     @Override
     public String toString() {
         return "ContactDetails{" +
-                "cellPhone='" + cellPhone + '\'' +
+                "cellPhoneNumber='" + cellPhoneNumber + '\'' +
                 ", email='" + email + '\'' +
                 ", homeNumber='" + homeNumber + '\'' +
                 '}';

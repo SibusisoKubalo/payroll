@@ -1,3 +1,7 @@
+/**
+ * @author Sibusiso Kubalo
+ * Student Num: 218316038
+ */
 package za.ac.cput.domain;
 
 import java.util.List;
@@ -5,25 +9,15 @@ import java.util.List;
 public class Employee {
     private String employeeNumber;
     private String name;
-    private za.ac.cput.domain.EmploymentType employmentType;
+    private String employmentType;
     private String nationality;
-    private String contactDetails;
-    private String address;
-    private List<Identity> identityDocuments;
-    private Position position;
+    private ContactDetails contactDetails;
+    private Address address;
+    private List<Identity> identities;
+    private double hoursWorked;
+    private double payRate;
 
-    // Constructor, Getters & Setters
-    public Employee(String employeeNumber, String name, EmploymentType employmentType, String nationality, ContactDetails contactDetails, String address, List Identity) {
-        this.employeeNumber = employeeNumber;
-        this.name = name;
-        this.employmentType = employmentType;
-        this.nationality = nationality;
-        this.contactDetails = contactDetails.toString();
-        this.address = address;
-        this.identityDocuments = Identity;
-
-    }
-
+    // Getters and Setters
     public String getEmployeeNumber() {
         return employeeNumber;
     }
@@ -40,11 +34,11 @@ public class Employee {
         this.name = name;
     }
 
-    public za.ac.cput.domain.EmploymentType getEmploymentType() {
+    public String getEmploymentType() {
         return employmentType;
     }
 
-    public void setEmploymentType(za.ac.cput.domain.EmploymentType employmentType) {
+    public void setEmploymentType(String employmentType) {
         this.employmentType = employmentType;
     }
 
@@ -56,51 +50,59 @@ public class Employee {
         this.nationality = nationality;
     }
 
-    public String getContactDetails() {
+    public ContactDetails getContactDetails() {
         return contactDetails;
     }
 
-    public void setContactDetails(String contactDetails) {
+    public void setContactDetails(ContactDetails contactDetails) {
         this.contactDetails = contactDetails;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(Address address) {
         this.address = address;
     }
 
-    public List<Identity> getIdentityDocuments() {
-        return identityDocuments;
+    public List<Identity> getIdentities() {
+        return identities;
     }
 
-    public void setIdentityDocuments(List<Identity> identityDocuments) {
-        this.identityDocuments = identityDocuments;
+    public void setIdentities(List<Identity> identities) {
+        this.identities = identities;
     }
 
-    public Position getPosition() {
-        return position;
+    public double getHoursWorked() {
+        return hoursWorked;
     }
 
-    public void setPosition(Position position) {
-        this.position = position;
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
     }
 
+    public double getPayRate() {
+        return payRate;
+    }
+
+    public void setPayRate(double payRate) {
+        this.payRate = payRate;
+    }
+
+    // toString method
     @Override
     public String toString() {
         return "Employee{" +
                 "employeeNumber='" + employeeNumber + '\'' +
                 ", name='" + name + '\'' +
-                ", employmentType=" + employmentType +
+                ", employmentType='" + employmentType + '\'' +
                 ", nationality='" + nationality + '\'' +
-                ", contactDetails='" + contactDetails + '\'' +
-                ", address='" + address + '\'' +
-                ", identityDocuments=" + identityDocuments +
-                ", position=" + position +
+                ", contactDetails=" + contactDetails + '\'' +
+                ", address=" + address + '\'' +
+                ", identities=" + identities +
+                ", hoursWorked=" + hoursWorked +
+                ", payRate=" + payRate +
                 '}';
     }
-
-
 }

@@ -1,3 +1,7 @@
+/**
+ * @author Sibusiso Kubalo
+ * Student Num: 218316038
+ */
 package za.ac.cput.repository;
 
 import za.ac.cput.domain.Job;

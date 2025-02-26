@@ -1,3 +1,7 @@
+/**
+ * @author Sibusiso Kubalo
+ * Student Num: 218316038
+ */
 package za.ac.cput.domain;
 
 public class Position {
@@ -45,6 +49,7 @@ public class Position {
         this.employee = employee;
     }
 
+    // toString method
     @Override
     public String toString() {
         return "Position{" +
@@ -52,20 +57,6 @@ public class Position {
                 ", status=" + status +
                 ", employee=" + employee +
                 '}';
-    }
-
-    private class PositionStatus {
-        public static final PositionStatus OPEN = null;
-        public static final PositionStatus CLOSED = null;
-    }
-
-    private class Employee {
-        //employee attributes
-    }
-
-    public static void main(String[] args) {
-        Position position = new Position("1", PositionStatus.OPEN);
-        System.out.println(position);
     }
 
 }

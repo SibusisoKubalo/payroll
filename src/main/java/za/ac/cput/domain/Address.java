@@ -1,15 +1,14 @@
+/**
+ * @author Sibusiso Kubalo
+ * Student Num: 218316038
+ */
 package za.ac.cput.domain;
 
 public class Address {
     private String streetAddress;
     private String postalAddress;
 
-    // Constructor, Getters & Setters
-    public Address(String streetAddress, String postalAddress) {
-        this.streetAddress = streetAddress;
-        this.postalAddress = postalAddress;
-    }
-
+    // Getters and Setters
     public String getStreetAddress() {
         return streetAddress;
     }
@@ -26,6 +25,7 @@ public class Address {
         this.postalAddress = postalAddress;
     }
 
+    // toString method
     @Override
     public String toString() {
         return "Address{" +
@@ -33,4 +33,5 @@ public class Address {
                 ", postalAddress='" + postalAddress + '\'' +
                 '}';
     }
+
 }
